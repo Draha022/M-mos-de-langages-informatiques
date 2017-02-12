@@ -21,8 +21,11 @@ en dernier doit être fermée en premier, comme dans l'exemple suivant: <balise 
 
 Tout document est composé de 2 parties: une tête ("head") et un corps ("body").
 
-La tête: La tête contient toutes les informations de la page web, notamment son titre. Le titre ("title") est
+La tête: La tête contient toutes les informations de la page web (ou du document HTML), notamment son titre. Le titre ("title") est
 la phrase que l'on voit sur le navigateur, ici "M-mos-de-langages-...".
+
+La corps: Tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.) sera écrit dans la
+partie body (le corps). Le contenu du body correspond à ce qui sera visible sur la page web.
 
                                                    
                                                     -- Les codes --
@@ -35,5 +38,14 @@ ces balises.
 * Toujours placer le code <html> à la ligne 2 et le </html> à la ligne 3.
 
 <title></title> - Indique au navigateur le titre à mettre à l'onglet.
+
+<head></head> - La tête du document HTML
+* À placer après la balise ouvrante <html> (ligne 3)
+
+<body></body> - Le corps du document HTML
+* À placer après la balise fermante </head>. Passer une ligne entre </head> et la balise ouvrante <body>.
+Ex: </head>
+
+    <body>
 
 
