@@ -1,38 +1,39 @@
-Voici un mémo pour le langage HTML.
+Voici un mémo pour le langage HTML5.
 
      - À quoi sert ce langage? -
      
-- Chaque page web est écrite dans un langage qui s'appelle le HTML. Ce langage est comme un squelette qui donne la structure
+  Chaque page web est écrite dans un langage qui s'appelle le HTML. Ce langage est comme un squelette qui donne la structure
 de chaque page.
 
 - HTML signifie "HyperText Markup Language". HyperText ("hypertexte" en français) signifie "texte qui inclut des liens".
 
-- Un markup language ("langage de balisage" en français) est un langage de description utilisé lorsque l'on veut que le texte
+- Le HTMl est un Un markup language ("langage de balisage" en français). C'est langage de description utilisé lorsque l'on veut que le texte
 ne soit pas uniquement constitué de mots figés sur une page. Un langage de balisage permet de transformer du texte en 
-images, liens, tableaux, listes et bien plus encore ! LE HTML en est un.
+images, liens, tableaux, listes et bien plus encore !
 
-     - Règles générales d'écriture -
+     ~~ Règles générales d'écriture ~~
 
-- Ce qu'il y a entre les balises (<>) est un code. Ex: <html>.
+- Ce qu'il y a entre les balises "<" et ">" est un code. Ex: <html>.
 
 - <html> est une balise ouvrante et </html> est une balise fermante (la barre oblique indique la fin du code).
 
 - Les balises fonctionnent presque toujours par paires : une balise ouvrante et une balise fermante. Ex: <head></head>
 
 - On peut comparer les balises à des parenthèses : chaque fois qu'on en ouvrez une, il faut la refermer.
-Les balises peuvent aussi s'imbriquer. Il est donc très important de les fermer dans le bon ordre: la balise ouverte
-en dernier doit être fermée en premier, comme dans l'exemple suivant: <balise A><balise B> texte </balise B></balise A>
+
+- Les balises peuvent s'imbriquer. Il est donc très important de les fermer dans le bon ordre: la balise ouverte
+en dernier doit être fermée en premier, comme dans l'exemple suivant: <balise A><balise B>texte</balise B></balise A>
 
 Tout document est composé de 2 parties: une en-tête ("head") et un corps ("body").
 
-L'en-tête: L'en-tête contient toutes les informations de la page web (ou du document HTML), notamment son titre. Le titre ("title")
-est la phrase que l'on voit sur le navigateur, ici "M-mos-de-langages-...".
+L'en-tête (head): Contient toutes les informations de la page web (ou du document HTML), notamment son titre. Le titre ("title")
+est la phrase que l'on voit sur l'onglet de cette dernière, ici "M-mos-de-langages-[...]".
 
-La corps: Tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.) sera écrit dans la
-partie body (le corps). Le contenu du body correspond à ce qui sera visible sur la page web.
+La body (corps): Tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.) sera écrit dans cette partie. 
+Le contenu du body correspond à ce qui sera visible sur la page web.
 
                                                    
-                                                    ~~ Les codes généraux ~~
+                                                    ~~ Les codes fondamentaux ~~
                                                     
 <!DOCTYPE html> - Indique au navigateur quel langage il doit utiliser pour lire la page web (ici le HTML)
 * Toujours mettre ce code à la ligne 1
@@ -63,7 +64,7 @@ Ex: </head>
   <h1></h1> - Permet de donner un titre à son paragraphe. La balise <h1> est utilisée pour le titre le plus gros et
   la balise <h6>, pour le titre le plus petit. 
   
-  <a href="URL">texte</a> - Permer de donner un lien à un mot ou groupe de mots spécifiques. Cette balise possède un attribut appelé "href". La valeur donnée à href est
+  <a href="URL">texte</a> - Permet de donner un lien à un mot ou groupe de mots spécifiques. Cette balise possède un attribut appelé "href". La valeur donnée à href est
   l'adresse de la page web vers laquelle le lien renvoie.
   * Ne pas oublier de mettre des guillemets ("") autour de l'URL
   * Ne pas oublier le "="
@@ -74,11 +75,13 @@ Ex: </head>
   * Ne pas oublier le "="
   * Ne pas oublier le "/" qui ferme la balise
   
+  <br /> - Retour à la ligne
+  
   
                                                 ~~ Les "combos" de codes ~~
                                                 
   <a href="URL du site">
-    <img src="URL de l'image">  - Permet d'envoyer l'utilisateur sur autre site en cliquant sur l'image
+    <img src="URL de l'image">  - Permet de rendre une image cliquable
   </a>  
   
   
