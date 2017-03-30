@@ -11,26 +11,37 @@ de chaque page.
 ne soit pas uniquement constitué de mots figés sur une page. Un langage de balisage permet de transformer du texte en 
 images, liens, tableaux, listes et bien plus encore !
 
+
      ~~ Règles générales d'écriture ~~
 
 - Ce qu'il y a entre les balises "<" et ">" est un code. Ex: <html>.
 
+
 - <html> est une balise ouvrante et </html> est une balise fermante (la barre oblique indique la fin du code).
 
-- Les balises fonctionnent presque toujours par paires : une balise ouvrante et une balise fermante. Ex: <head></head>
 
-- On peut comparer les balises à des parenthèses : chaque fois qu'on en ouvrez une, il faut la refermer.
+- Les balises fonctionnent presque toujours par paires : une balise ouvrante et une balise fermante. Ex: <head></head>
+Il existe cependant quelques exceptions comme <img src="URL de l'image" /> qui sont appelés "balises orphelines".
+
+
+- On peut comparer les balises à des parenthèses : chaque fois qu'on en ouvre une, il faut la refermer. 
+
 
 - Les balises peuvent s'imbriquer. Il est donc très important de les fermer dans le bon ordre: la balise ouverte
 en dernier doit être fermée en premier, comme dans l'exemple suivant: <balise A><balise B>texte</balise B></balise A>
 
-Tout document est composé de 2 parties: une en-tête ("head") et un corps ("body").
 
-L'en-tête (head): Contient toutes les informations de la page web (ou du document HTML), notamment son titre. Le titre ("title")
+- Tout document est composé de 2 parties: une en-tête ("head") et un corps ("body").
+
+
+L'en-tête (head) contient toutes les informations du document HTML, notamment son titre. Le titre (title)
 est la phrase que l'on voit sur l'onglet de cette dernière, ici "M-mos-de-langages-[...]".
 
-La body (corps): Tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.) sera écrit dans cette partie. 
-Le contenu du body correspond à ce qui sera visible sur la page web.
+
+La body (corps) contient presque tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.). 
+C'est cette partie qui sera visible pour les visiteurs
+
+
 
                                                    
                                                     ~~ Les codes ~~
@@ -38,20 +49,26 @@ Le contenu du body correspond à ce qui sera visible sur la page web.
 <!DOCTYPE html> - Indique au navigateur quel langage il doit utiliser pour lire la page web (ici le HTML)
 * Toujours mettre ce code à la ligne 1
 
+
 <html></html> - Indiquent respectivement le début et la fin du code HTML. Tout ce que contiendra le document HTML sera entre 
 ces balises.
 * Toujours placer le code <html> à la ligne 2 et le </html> à la ligne 3.
+
 
 <!-- Ceci est un commentaire --> - Tout y est dit ^^'. Ça permet de laisser des commentaires sur le code de la page
 sans que ces derniers ne l'affectent.
 
 
-     - Ce qui entre dans l'en-tête (<head></head>) -
+
+     - L'en-tête -
+     
      
 <head></head> - La tête du document HTML
 * À placer après la balise ouvrante <html> (ligne 3)
 
+
 <title></title> - Indique au navigateur le titre à mettre à l'onglet.
+
 
 <meta charset="utf-8" /> - Indique l'encodage utilisé dans le fichier html. L'encodage indique la façon dont
 le fichier est enregistré. C'est lui qui détermine comment les caractères spéciaux vont s'afficher 
@@ -59,7 +76,11 @@ le fichier est enregistré. C'est lui qui détermine comment les caractères sp�
 pratiquement tous les symboles de toutes les langues de notre planète. Il est donc conseillé de l'utiliser.
 
 
-     - Ce qui va dans le corps (<body></body>) -
+               - L'en-tête (fin)
+
+
+
+               - le corps -
 
 <body></body> - Le corps du document HTML
 * À placer après la balise fermante </head>. Passer une ligne entre </head> et la balise ouvrante <body>.
@@ -67,10 +88,15 @@ Ex: </head>
 
     <body>
     
+    
   <p></p> - Créer un paragraphe
+  
   
   <h1></h1> - Permet de donner un titre à son paragraphe. La balise <h1> est utilisée pour le titre le plus gros et
   la balise <h6>, pour le titre le plus petit. 
+  
+  
+     -- Les liens --
   
   <a href="URL">texte</a> - Permet de donner un lien à un mot ou groupe de mots spécifiques.
   Cette balise possède un attribut appelé "href". La valeur donnée à href est l'adresse de 
@@ -81,24 +107,42 @@ Ex: </head>
   http://www.site.com/?data=15&name=mateo21, il faut remplacer tous les « & » par « &amp; » comme ceci : 
   http://www.site.com/?data=15&amp;name=mateo21. C'est nécessaire pour avoir une page web correctement construite en HTML5.
   
+  
   <img src="URL" /> - Permet d'ajouter une image. 
   * Ne pas oublier de mettre des guillemets ("") autour de l'URL
   * Ne pas oublier le "="
   * Ne pas oublier le "/" qui ferme la balise
   
+  
+  Chemin relatif: Permet de faire un lien entre une page a et une page b sans utiliser de lien absolu. Il est
+  conseillé de l'utiliser le plus souvent possible dans son site web quand on veut faire des liens entre des pages
+  du même site, car cela permet de changer d'hébergeur sans devoir rééditer chaque lien. 
+  Comment utiliser le chamin relatif? Il y a 4 cas de figure:
+  1. La page b se trouve dans le même dossier que la a, donc <a href="page b.html">
+  2. Elle se trouve dans un dossier parent, donc <a href="../page b.html">
+  3. Elle se trouve dans un sous-dossier, donc <a href="sous-dossier/page b.html">
+  4. Elle se trouve dans un sous-dossier dans un sous-dossier, donc <a href="sous-dossier/sous-sous-dossier/page b.html">
+  
+  
   <br /> - Retour à la ligne
+  
   
   <em>texte</em> - Mettre un léger emphase sur un mot ou un groupe de mot.
    
+   
   <strong>texte</strong> - Mettre l'emphase sur un mot ou un groupe de mot.
    
-  <mark>texte</mark> - Surligner le texte
+   
+  <mark>texte</mark> - Surligner une partie de texte.
+  
   
      -- Les listes --
   
   <ul></ul> - Liste à puce, non ordonnée
   
+  
   <ol></ol> - Liste ordonnée (1., 2., 3., ...)
+  
   
   <li></li> - Insérer un item dans une liste
   Ex: 
@@ -110,9 +154,10 @@ Ex: </head>
     </ul>  
     
     -- Les listes (fin) --
-                                                
+            
+            
   <a href="URL du site">
-    <img src="URL de l'image">  - Permet de rendre une image cliquable
+    <img src="URL de l'image">  - Mettre un lien dans une image
   </a>  
   
   
