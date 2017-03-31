@@ -60,7 +60,7 @@ sans que ces derniers ne l'affectent.
 
 
 
-     - L'en-tête -
+                  - L'en-tête -
      
      
 <head></head> - La tête du document HTML
@@ -76,11 +76,11 @@ le fichier est enregistré. C'est lui qui détermine comment les caractères sp�
 pratiquement tous les symboles de toutes les langues de notre planète. Il est donc conseillé de l'utiliser.
 
 
-               - L'en-tête (fin)
+                  - L'en-tête (fin)
 
 
 
-               - le corps -
+                  - le corps -
 
 <body></body> - Le corps du document HTML
 * À placer après la balise fermante </head>. Passer une ligne entre </head> et la balise ouvrante <body>.
@@ -96,7 +96,7 @@ Ex: </head>
   la balise <h6>, pour le titre le plus petit. 
   
   
-     -- Les liens --
+          -- Les liens --
   
   <a href="URL">texte</a> - Permet de donner un lien à un mot ou groupe de mots spécifiques.
   Cette balise possède un attribut appelé "href". La valeur donnée à href est l'adresse de 
@@ -114,14 +114,39 @@ Ex: </head>
   * Ne pas oublier le "/" qui ferme la balise
   
   
-  Chemin relatif: Permet de faire un lien entre une page a et une page b sans utiliser de lien absolu. Il est
+  Lien relatif: Permet de faire un lien entre une page a et une page b sans utiliser de lien absolu. Il est
   conseillé de l'utiliser le plus souvent possible dans son site web quand on veut faire des liens entre des pages
   du même site, car cela permet de changer d'hébergeur sans devoir rééditer chaque lien. 
   Comment utiliser le chamin relatif? Il y a 4 cas de figure:
   1. La page b se trouve dans le même dossier que la a, donc <a href="page b.html">
   2. Elle se trouve dans un dossier parent, donc <a href="../page b.html">
-  3. Elle se trouve dans un sous-dossier, donc <a href="sous-dossier/page b.html">
+  3. Elle se trouve dans un sous-dossier, donc <a href=sous-dossier/page b.html">
   4. Elle se trouve dans un sous-dossier dans un sous-dossier, donc <a href="sous-dossier/sous-sous-dossier/page b.html">
+  
+  
+  <a href="URL" title="ce qu'on veut qu'il apparaîsse dans l'infobulle">texte</a> - Lorsqu'on passe la souris sur un lien 
+  possédant l'attribut "title", une infobulle appaîtra, ici "ce qu'on veut qu'il apparaîsse dans l'infobulle".
+  
+  
+  <a href="URL" target="_blank"> - Lorsqu'on cliquera sur ce lien, la nouvelle page apparaîtra automatiquement dans une
+  nouvelle fenêtre.
+  
+       -- Les ancres --
+     
+  Ancre: Point de repère qu'on peut mettre dans ses pages HTML lorsqu'elles sont très longues.
+     
+     
+  <balise id="mon_ancre">Titre</balise> - Créer une ancre. L'arribut "id" sert à donner un nom à cette dernière.
+     Il est possible de créer une ancre sur n'importe quelle balise.
+     
+     
+  <a href="#mon_ancre">Aller vers l'ancre</a> - Créer un lien qui mène vers un ancre.
+     *Ne pas oublier la dièse (#) devant le nom de l'ancre.
+     
+     
+  <a href="URL#ancre"> - Faire un lien vers une autre page web directement à une ancre.
+  
+       -- Les ancres (fin) --
   
   
   <br /> - Retour à la ligne
@@ -159,6 +184,8 @@ Ex: </head>
   <a href="URL du site">
     <img src="URL de l'image">  - Mettre un lien dans une image
   </a>  
+  
+
   
   
   
