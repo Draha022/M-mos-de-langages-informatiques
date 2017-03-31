@@ -114,14 +114,21 @@ Ex: </head>
   * Ne pas oublier le "/" qui ferme la balise
   
   
+    <a href="URL du site">
+    <img src="URL de l'image">  - Mettre un lien dans une image
+  </a>  
+  
+  
   Lien relatif: Permet de faire un lien entre une page a et une page b sans utiliser de lien absolu. Il est
   conseillé de l'utiliser le plus souvent possible dans son site web quand on veut faire des liens entre des pages
   du même site, car cela permet de changer d'hébergeur sans devoir rééditer chaque lien. 
+  
   Comment utiliser le chamin relatif? Il y a 4 cas de figure:
   1. La page b se trouve dans le même dossier que la a, donc <a href="page b.html">
   2. Elle se trouve dans un dossier parent, donc <a href="../page b.html">
   3. Elle se trouve dans un sous-dossier, donc <a href=sous-dossier/page b.html">
-  4. Elle se trouve dans un sous-dossier dans un sous-dossier, donc <a href="sous-dossier/sous-sous-dossier/page b.html">
+  4. Elle se trouve dans un sous-dossier qui se trouve dans un sous-dossier,
+  donc <a href="sous-dossier/sous-sous-dossier/page b.html">
   
   
   <a href="URL" title="ce qu'on veut qu'il apparaîsse dans l'infobulle">texte</a> - Lorsqu'on passe la souris sur un lien 
@@ -130,6 +137,13 @@ Ex: </head>
   
   <a href="URL" target="_blank"> - Lorsqu'on cliquera sur ce lien, la nouvelle page apparaîtra automatiquement dans une
   nouvelle fenêtre.
+  
+  
+  <a href="mailto:adresse e-mail">Envoyez-moi un e-mail !</a> - Permet aux visiteurs d'envoyer un e-mail à l'adresse indiquée
+  dans le code losqu'ils cliquent sur le lien.
+  *Ne pas oublier "mailto:"
+  
+  <a href="fichier à télécharger">Télécharger le fichier</a>
   
        -- Les ancres --
      
@@ -181,9 +195,7 @@ Ex: </head>
     -- Les listes (fin) --
             
             
-  <a href="URL du site">
-    <img src="URL de l'image">  - Mettre un lien dans une image
-  </a>  
+
   
 
   
