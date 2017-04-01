@@ -12,7 +12,7 @@ ne soit pas uniquement constitué de mots figés sur une page. Un langage de bal
 images, liens, tableaux, listes et bien plus encore !
 
 
-     ~~ Règles générales d'écriture ~~
+                                                  ~~ Règles générales d'écriture ~~
 
 - Ce qu'il y a entre les balises "<" et ">" est un code. Ex: <html>.
 
@@ -20,11 +20,12 @@ images, liens, tableaux, listes et bien plus encore !
 - <html> est une balise ouvrante et </html> est une balise fermante (la barre oblique indique la fin du code).
 
 
-- Les balises fonctionnent presque toujours par paires : une balise ouvrante et une balise fermante. Ex: <head></head>
+- Les balises fonctionnent presque toujours par paires : une balise ouvrante et une balise fermante. On peut donc les
+comparer àdes parenthèses: chaque fois qu'on en ouvre une, il faut la refermer.Ex: <head></head>
 Il existe cependant quelques exceptions comme <img src="URL de l'image" /> qui sont appelés "balises orphelines".
 
 
-- On peut comparer les balises à des parenthèses : chaque fois qu'on en ouvre une, il faut la refermer. 
+-  
 
 
 - Les balises peuvent s'imbriquer. Il est donc très important de les fermer dans le bon ordre: la balise ouverte
@@ -39,13 +40,22 @@ est la phrase que l'on voit sur l'onglet de cette dernière, ici "M-mos-de-langa
 
 
 La body (corps) contient presque tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.). 
-C'est cette partie qui sera visible pour les visiteurs
+C'est cette partie qui sera visible pour les visiteurs.
 
 
-
+- Il est possible de laisser des commentaires dans le code pour s'y retrouver plus facilement. Ces derniers sont ignorés par 
+le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire ceci: <!--texte-->
+                                                   
                                                    
                                                     ~~ Les codes ~~
-                                                    
+                                              
+                                              
+                  ~ Les codes minimaux ~
+                  
+     Pour qu'un navigateur puisse lire un fichier HTML, il a besoin de quelques renseignements. Ces derniers sont les codes
+     qui se trouvent dans absolument tous les dossier HTML!
+                      
+                      
 <!DOCTYPE html> - Indique au navigateur quel langage il doit utiliser pour lire la page web (ici le HTML)
 * Toujours mettre ce code à la ligne 1
 
@@ -55,8 +65,7 @@ ces balises.
 * Toujours placer le code <html> à la ligne 2 et le </html> à la ligne 3.
 
 
-<!-- Ceci est un commentaire --> - Tout y est dit ^^'. Ça permet de laisser des commentaires sur le code de la page
-sans que ces derniers ne l'affectent.
+
 
 
 
@@ -64,7 +73,7 @@ sans que ces derniers ne l'affectent.
      
      
 <head></head> - La tête du document HTML
-* À placer après la balise ouvrante <html> (ligne 3)
+* À placer après la balise <html> (ligne 3)
 
 
 <title></title> - Indique au navigateur le titre à mettre à l'onglet.
