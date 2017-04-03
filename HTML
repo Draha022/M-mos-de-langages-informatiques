@@ -203,7 +203,7 @@ Ex: </head>
      Pour avoir une page web plus dynamique, insérer des images peut être intéressant. Comme on dit, une image vaut 1000 mots.
  Cependant, si on ne choisit pas le bon format d'image, la page en question deviendra vite lourde à charger.
  
- Les formats: Les formats servent pour la plupart à compresser une image. Il en existe trois principaux adaptés au web qui sont
+ - Les formats: Les formats servent pour la plupart à compresser une image. Il en existe trois principaux adaptés au web qui sont
  respectivement le .JPEG (ou .JPG), le .PNG et le .GIF.
  
  .JPEG (.JPG): Ce format est conçu pour réduire le poids des photos (c'est-à-dire la taille du fichier associé), qui peuvent
@@ -230,14 +230,14 @@ N.B.: Pour éviter les problèmes avec les noms d'image, il est recommandé d'en
 accent, par exemple :  mon_image.png. On peut remplacer les espaces par le caractère underscore (« _ ») comme dans l'exemple
 plus haut.
     
-<img src="URL de l'image" alt="Ce que représente l'image" /> - Insérer une image
-- L'attribut "src" est obligatoire. C'est elle qui donne l'endroit où chercher l'image.
-- L'attribut "alt" signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire
+- <img src="URL de l'image" alt="Ce que représente l'image" /> - Insérer une image
+* L'attribut "src" est obligatoire. C'est elle qui donne l'endroit où chercher l'image.
+* L'attribut "alt" signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire
 un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être
 téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas
 « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images.
 
-Miniature cliquable: Si l'image est très grosse, il est conseillé d'en afficher la miniature sur son site. Il faut ensuite 
+- Miniature cliquable: Si l'image est très grosse, il est conseillé d'en afficher la miniature sur son site. Il faut ensuite 
 ajouter un lien sur cette miniature pour que les visiteurs puissent afficher l'image en taille originale.
 
 Code: <a href="lien de l'image originale"><img src="lien de l'image réduite" alt="Ce que représente l'image" 
@@ -253,7 +253,10 @@ l'intérieur de la balise <figure>. Ex: <figure>
                                             <img src="images/blocnotes.png" alt="Bloc-Notes" />
                                             <figcaption>Le logiciel Bloc-Notes</figcaption>
                                        </figure>
-  
+                                       
+La balise <figure> a un rôle avant tout sémantique. Cela veut dire qu'elle indique à l'ordinateur que l'image a du sens et
+qu'elle est importante pour la bonne compréhension du texte. Cela peut permettre à un programme de récupérer toutes les
+figures du texte et de les référencer dans une table des figures, par exemple.
   
   
    
