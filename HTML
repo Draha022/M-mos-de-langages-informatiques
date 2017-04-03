@@ -7,17 +7,17 @@ de chaque page.
 
 - HTML signifie "HyperText Markup Language". HyperText ("hypertexte" en français) signifie "texte qui inclut des liens".
 
-- Le HTMl est un Un markup language ("langage de balisage" en français). C'est langage de description utilisé lorsque l'on veut que le texte
+- Le HTML est un un markup language ("langage de balisage" en français). C'est langage de description utilisé lorsque l'on veut que le texte
 ne soit pas uniquement constitué de mots figés sur une page. Un langage de balisage permet de transformer du texte en 
 images, liens, tableaux, listes et bien plus encore !
 
 
                                                   ~~ Règles générales d'écriture ~~
 
-- Ce qu'il y a entre les balises "<" et ">" est un code. Ex: <html>.
+- Ce qu'il y a entre les balises "<" et ">" est un élément du langage HTML. Ex: <html>.
 
 
-- <html> est une balise ouvrante et </html> est une balise fermante (la barre oblique indique la fin du code).
+- <html> est une balise ouvrante et </html> est une balise fermante (la barre oblique indique la fin de la balise).
 
 
 - Les balises fonctionnent presque toujours par paires : une balise ouvrante et une balise fermante. On peut donc les
@@ -33,7 +33,7 @@ en dernier doit être fermée en premier, comme dans l'exemple suivant: <balise 
 
 
 L'en-tête (head) contient toutes les informations du document HTML, notamment son titre. Le titre (title)
-est la phrase que l'on voit sur l'onglet de cette dernière, ici "M-mos-de-langages-[...]".
+est la phrase que l'on voit sur l'onglet du navigateur correspondant à la page, ici "M-mos-de-langages-[...]".
 
 
 La body (corps) contient presque tout le contenu de la page web (le texte, les images, les liens, une vidéo, etc.). 
@@ -41,15 +41,15 @@ C'est cette partie qui sera visible pour les visiteurs.
 
 
 - Il est possible de laisser des commentaires dans le code pour s'y retrouver plus facilement. Ces derniers sont ignorés par 
-le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire ceci: <!--texte-->
+le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire ceci: <!-- mon commentaire -->
                                                    
                                                    
                                                     ~~ Les codes ~~
                                               
                                               
-                  ~ Les codes minimaux ~
+                  ~ Les balises minimales ~
                   
-     Pour qu'une page HTML puisse fonctionner, il a besoin d'un certain minimum de codes. 
+     Pour qu'une page HTML puisse fonctionner, il a besoin d'un certain minimum de balises. 
                       
                       
 <!DOCTYPE html> - Indique au navigateur quel langage il doit utiliser pour lire la page web (ici le HTML).
@@ -58,7 +58,7 @@ le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire 
 
 <html></html> - Indiquent respectivement le début et la fin du code HTML. Tout ce que contiendra le document HTML sera entre 
 ces balises.
-* Toujours placer le code <html> à la ligne 2 et le </html> à la ligne 3.
+* Toujours placer la balise <html> à la ligne 2 et le </html> à la ligne 3.
 
 
                   - L'en-tête -
@@ -200,14 +200,63 @@ Ex: </head>
             
     -- les images --
     
+     Pour avoir une page web plus dynamique, insérer des images peut être intéressant. Comme on dit, une image vaut 1000 mots.
+ Cependant, si on ne choisit pas le bon format d'image, la page en question deviendra vite lourde à charger.
+ 
+ Les formats: Les formats servent pour la plupart à compresser une image. Il en existe trois principaux adaptés au web qui sont
+ respectivement le .JPEG (ou .JPG), le .PNG et le .GIF.
+ 
+ .JPEG (.JPG): Ce format est conçu pour réduire le poids des photos (c'est-à-dire la taille du fichier associé), qui peuvent
+ comporter plus de 16 millions de couleurs différentes.
+ 
+ .PNG: Le format PNG (Portable Network Graphics) est le plus récent de tous. Ce format est adapté à la plupart des graphiques
+ (On pourrait donc généraliser en disant « à tout ce qui n'est pas une photo »). 
+ Le PNG a deux gros avantages : il peut être rendu transparent et il n'altère pas la qualité de l'image.
+
+Le PNG existe en deux versions, en fonction du nombre de couleurs que doit comporter l'image :
+
+    PNG 8 bits : 256 couleurs ;
+
+    PNG 24 bits : 16 millions de couleurs (autant qu'une image JPEG).
+        
+.JPG: C'est un format assez vieux, qui a été néanmoins très utilisé (et qui reste très utilisé par habitude). Ce format est
+limité à 256 couleurs. Le GIF conserve un certain avantage que le PNG n'a pas : il peut être animé.
+
+Résumé:  .JPEG (ou JPG) = Photos
+         .PNJ = Autres images
+         .JPG = Images animées
+         
+N.B.: Pour éviter les problèmes avec les noms d'image, il est recommandé d'enregistrer ses fichiers avec des noms en minuscules, sans espace ni
+accent, par exemple :  mon_image.png. On peut remplacer les espaces par le caractère underscore (« _ ») comme dans l'exemple
+plus haut.
     
+<img src="URL de l'image" alt="Ce que représente l'image" /> - Insérer une image
+- L'attribut "src" est obligatoire. C'est elle qui donne l'endroit où chercher l'image.
+- L'attribut "alt" signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire
+un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être
+téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas
+« voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images.
 
-  
+Miniature cliquable: Si l'image est très grosse, il est conseillé d'en afficher la miniature sur son site. Il faut ensuite 
+ajouter un lien sur cette miniature pour que les visiteurs puissent afficher l'image en taille originale.
 
+Code: <a href="lien de l'image originale"><img src="lien de l'image réduite" alt="Ce que représente l'image" 
+title="Cliquez pour agrandir" /></a>
+  
+     -- les images (fin) --
+     
+Les figures: Éléments qui viennent enrichir le texte pour compléter les informations de la page. Tout ce qui vient
+illustrer le texte est une figure.
+Créer une figure: <figure>Élément qui fait office de figure</figure>
+*Une figure est le plus souvent accompagnée d'une légende. Pour ajouter une légende, il suffit d'ajouter la balise <figcaption> à
+l'intérieur de la balise <figure>. Ex: <figure>
+                                            <img src="images/blocnotes.png" alt="Bloc-Notes" />
+                                            <figcaption>Le logiciel Bloc-Notes</figcaption>
+                                       </figure>
   
   
   
-  
+   
     
     
 
