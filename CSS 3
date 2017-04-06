@@ -1,0 +1,17 @@
+À quoi sert le CSS (Cascading Style Sheets)? Ce langage est complémentaire au HTML. Grace à celui-ci, on peut faire la mise
+en page de sa page web.
+
+Il est recommandé d'écrire son CSS dans un fichier externe à celui utilisé pour le HTML.
+
+                    ~~ Règles d'écriture ~~
+                    
+balise
+{
+    propriété1: valeur1;
+    propriété2: valeur2;
+    ...
+}
+                    
+
+<link rel="stylesheet" href="Lien_du_fichier_CSS" /> - Créer un lien vers son fichier CSS
+  
