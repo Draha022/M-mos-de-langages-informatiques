@@ -12,9 +12,10 @@ ne soit pas uniquement constitué de mots figés sur une page. Un langage de bal
 images, liens, tableaux, listes et bien plus encore !
 
 
-                                                  ~~ Règles générales d'écriture ~~
+                                                  ~~ Règles d'écriture ~~
 
-- Ce qu'il y a entre les balises "<" et ">" est un élément du langage HTML. Ex: <html>.
+
+- Ce qu'il y a entre les balises "<" et ">" est appelé une balise. Ex: <html>.
 
 
 - <html> est une balise ouvrante et </html> est une balise fermante (la barre oblique indique la fin de la balise).
@@ -49,6 +50,7 @@ le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire 
                                               
                   ~ Les balises minimales ~
                   
+                  
      Pour qu'une page HTML puisse fonctionner, il a besoin d'un certain minimum de balises. 
                       
                       
@@ -61,7 +63,9 @@ ces balises.
 * Toujours placer la balise <html> à la ligne 2 et le </html> à la ligne 3.
 
 
-                  - L'en-tête -
+                  ~ Les balises minimales (fin) ~
+
+                  ~ L'en-tête ~
      
      
 <head></head> - La tête du document HTML
@@ -77,11 +81,10 @@ le fichier est enregistré. C'est lui qui détermine comment les caractères sp�
 pratiquement tous les symboles de toutes les langues de notre planète. Il est donc conseillé de l'utiliser.
 
 
-                  - L'en-tête (fin)
+                  ~ L'en-tête (fin) ~
 
+                  ~ le corps ~
 
-
-                  - le corps -
 
 <body></body> - Le corps du document HTML
 * À placer après la balise fermante </head>. Passer une ligne entre </head> et la balise ouvrante <body>.
@@ -97,7 +100,8 @@ Ex: </head>
   la balise <h6>, pour le titre le plus petit. 
   
   
-          -- Les liens --
+               -- Les liens --
+  
   
   <a href="mon_lien">mon lien</a> - Permet de donner un lien à un mot ou groupe de mots spécifiques.
   Cette balise possède un attribut appelé "href". La valeur donnée à href est l'adresse de 
@@ -113,6 +117,7 @@ Ex: </head>
   * Ne pas oublier de mettre des guillemets ("") autour de l'URL
   * Ne pas oublier le "="
   * Ne pas oublier le "/" qui ferme la balise
+  
   
   
     <a href="URL du site">
@@ -149,7 +154,11 @@ Ex: </head>
   *Le fichier en question doit être soit dans le même dossier que le celui du site, soit dans un sous-dossier ou
   soit dans un dossier parent.
   
-       -- Les ancres --
+               
+               -- Les liens (fin) --
+  
+               -- Les ancres --
+     
      
   Ancre: Point de repère qu'on peut mettre dans ses pages HTML lorsqu'elles sont très longues.
      
@@ -164,7 +173,7 @@ Ex: </head>
      
   <a href="URL#ancre"> - Faire un lien vers une autre page web directement à une ancre.
   
-       -- Les ancres (fin) --
+               -- Les ancres (fin) --
   
   
   <br /> - Retour à la ligne
@@ -179,7 +188,8 @@ Ex: </head>
   <mark>texte</mark> - Surligner une partie de texte.
   
   
-     -- Les listes --
+               -- Les listes --
+  
   
   <ul></ul> - Liste à puce, non ordonnée
   
@@ -196,9 +206,11 @@ Ex: </head>
       <li>...</li>
     </ul>  
     
-    -- Les listes (fin) --
+    
+               -- Les listes (fin) --
             
-    -- les images --
+               -- les images --
+    
     
      Pour avoir une page web plus dynamique, insérer des images peut être intéressant. Comme on dit, une image vaut 1000 mots.
  Cependant, si on ne choisit pas le bon format d'image, la page en question deviendra vite lourde à charger.
@@ -245,6 +257,7 @@ title="Cliquez pour agrandir" /></a>
   
      -- les images (fin) --
      
+     
 Les figures: Éléments qui viennent enrichir le texte pour compléter les informations de la page. Tout ce qui vient
 illustrer le texte est une figure.
 Créer une figure: <figure>Élément qui fait office de figure</figure>
@@ -257,6 +270,9 @@ l'intérieur de la balise <figure>. Ex: <figure>
 La balise <figure> a un rôle avant tout sémantique. Cela veut dire qu'elle indique à l'ordinateur que l'image a du sens et
 qu'elle est importante pour la bonne compréhension du texte. Cela peut permettre à un programme de récupérer toutes les
 figures du texte et de les référencer dans une table des figures, par exemple.
+
+
+                  ~ Le corps (fin) ~
   
   
    
