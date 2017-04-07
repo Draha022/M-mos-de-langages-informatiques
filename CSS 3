@@ -16,10 +16,6 @@ balise
 permet d'indiquer la couleur du texte, "font-size" qui permet d'indiquer la taille du texte, etc.
 *valeur : Pour chaque propriété CSS, on doit indiquer une valeur. Par exemple, pour la propriété color, il faut indiquer le nom
 de la couleur. Pour font-size, il faut indiquer quelle taille on veut...
-                    
-
-<link rel="stylesheet" href="Lien_du_fichier_CSS" /> - Créer un lien vers son fichier CSS
-*Ce code est à mettre IMPÉRATIVEMENT dans son fichier HTML.
 
 
 balise1, balise2, balise3, ...
@@ -30,6 +26,27 @@ balise1, balise2, balise3, ...
 }
 
 Donner la(es) même(s) propriété(s) et la(es) même(s) valeur(s) à deux ou plusieurs balises différentes.
+
+
+<link rel="stylesheet" href="Lien_du_fichier_CSS" /> - Créer un lien vers son fichier CSS
+
+*Ce code est à mettre IMPÉRATIVEMENT dans son fichier HTML.
+
+
+.balise_identifiée_avec_class
+{
+    propriété1: valeur1;
+}
+
+*Faire attention au point au début
+
+
+#balise_identifiée_avec_id
+{
+    propriété1: valeur1;
+}
+
+*Faire attention au dièse au début
 
 
 /* Commentaire */
