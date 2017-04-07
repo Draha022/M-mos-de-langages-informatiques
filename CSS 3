@@ -11,7 +11,36 @@ balise
     propriété2: valeur2;
     ...
 }
+
+*propriétés : Les « effets de style » de la page sont rangés dans des propriétés. Il y a par exemple la propriété "color" qui
+permet d'indiquer la couleur du texte, "font-size" qui permet d'indiquer la taille du texte, etc.
+*valeur : Pour chaque propriété CSS, on doit indiquer une valeur. Par exemple, pour la propriété color, il faut indiquer le nom
+de la couleur. Pour font-size, il faut indiquer quelle taille on veut...
                     
 
 <link rel="stylesheet" href="Lien_du_fichier_CSS" /> - Créer un lien vers son fichier CSS
-  
+*Ce code est à mettre IMPÉRATIVEMENT dans son fichier HTML.
+
+
+balise1, balise2, balise3, ...
+{
+    propriété1: valeur1;
+    propriété2: valeur2;
+    ...
+}
+
+Donner la(es) même(s) propriété(s) et la(es) même(s) valeur(s) à deux ou plusieurs balises différentes.
+
+
+/* Commentaire */
+
+                    ~~ Règles d'écriture (fin) ~~
+
+                    ~~ Les codes ~~
+                    
+balise
+{
+    color: couleur_voulue 
+}
+
+Sert à donner une couleur au texte situé entre les balises ciblées.
