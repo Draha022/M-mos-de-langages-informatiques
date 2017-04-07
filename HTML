@@ -11,9 +11,7 @@ de chaque page.
 ne soit pas uniquement constitué de mots figés sur une page. Un langage de balisage permet de transformer du texte en 
 images, liens, tableaux, listes et bien plus encore !
 
-
                                                   ~~ Règles d'écriture ~~
-
 
 - Ce qu'il y a entre les balises "<" et ">" est appelé une balise. Ex: <html>.
 
@@ -43,14 +41,11 @@ C'est cette partie qui sera visible pour les visiteurs.
 
 - Il est possible de laisser des commentaires dans le code pour s'y retrouver plus facilement. Ces derniers sont ignorés par 
 le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire ceci: <!-- mon commentaire -->
-                                                   
-                                                   
+                                                                                                      
                                                     ~~ Les codes ~~
-                                              
-                                              
+                                                                                          
                   ~ Les balises minimales ~
-                  
-                  
+                                    
      Pour qu'une page HTML puisse fonctionner, il a besoin d'un certain minimum de balises. 
                       
                       
@@ -62,12 +57,10 @@ le logiciel qui lit le fichier HTML. Pour écrire un commentaire, il faut faire 
 ces balises.
 * Toujours placer la balise <html> à la ligne 2 et le </html> à la ligne 3.
 
-
                   ~ Les balises minimales (fin) ~
 
                   ~ L'en-tête ~
-     
-     
+         
 <head></head> - La tête du document HTML
 * À placer après la balise <html> (ligne 3)
 
@@ -80,11 +73,9 @@ le fichier est enregistré. C'est lui qui détermine comment les caractères sp�
 (accents, idéogrammes chinois et japonais, caractères arabes, etc.). UTF-8 permet d'afficher sans aucun problème
 pratiquement tous les symboles de toutes les langues de notre planète. Il est donc conseillé de l'utiliser.
 
-
                   ~ L'en-tête (fin) ~
 
                   ~ le corps ~
-
 
 <body></body> - Le corps du document HTML
 * À placer après la balise fermante </head>. Passer une ligne entre </head> et la balise ouvrante <body>.
@@ -98,11 +89,9 @@ Ex: </head>
   
   <h1></h1> - Permet de donner un titre à son paragraphe. La balise <h1> est utilisée pour le titre le plus gros et
   la balise <h6>, pour le titre le plus petit. 
-  
-  
+    
                -- Les liens --
-  
-  
+   
   <a href="mon_lien">mon lien</a> - Permet de donner un lien à un mot ou groupe de mots spécifiques.
   Cette balise possède un attribut appelé "href". La valeur donnée à href est l'adresse de 
   la page web vers laquelle le lien renvoie.
@@ -153,13 +142,11 @@ Ex: </head>
   <a href="fichier à télécharger">Télécharger le fichier</a> - Faire télécharger un fichier en cliquant sur le lien.
   *Le fichier en question doit être soit dans le même dossier que le celui du site, soit dans un sous-dossier ou
   soit dans un dossier parent.
-  
-               
+                 
                -- Les liens (fin) --
   
                -- Les ancres --
-     
-     
+          
   Ancre: Point de repère qu'on peut mettre dans ses pages HTML lorsqu'elles sont très longues.
      
      
@@ -174,8 +161,7 @@ Ex: </head>
   <a href="URL#ancre"> - Faire un lien vers une autre page web directement à une ancre.
   
                -- Les ancres (fin) --
-  
-  
+   
   <br /> - Retour à la ligne
   
   
@@ -186,10 +172,8 @@ Ex: </head>
    
    
   <mark>texte</mark> - Surligner une partie de texte.
-  
-  
-               -- Les listes --
-  
+   
+               -- Les listes --  
   
   <ul></ul> - Liste à puce, non ordonnée
   
@@ -205,13 +189,11 @@ Ex: </head>
       <li>Biscuits</li>
       <li>...</li>
     </ul>  
-    
-    
+        
                -- Les listes (fin) --
             
                -- les images --
-    
-    
+        
      Pour avoir une page web plus dynamique, insérer des images peut être intéressant. Comme on dit, une image vaut 1000 mots.
  Cependant, si on ne choisit pas le bon format d'image, la page en question deviendra vite lourde à charger.
  
@@ -256,8 +238,7 @@ Code: <a href="lien de l'image originale"><img src="lien de l'image réduite" al
 title="Cliquez pour agrandir" /></a>
   
      -- les images (fin) --
-     
-     
+          
 Les figures: Éléments qui viennent enrichir le texte pour compléter les informations de la page. Tout ce qui vient
 illustrer le texte est une figure.
 Créer une figure: <figure>Élément qui fait office de figure</figure>
@@ -271,8 +252,15 @@ La balise <figure> a un rôle avant tout sémantique. Cela veut dire qu'elle ind
 qu'elle est importante pour la bonne compréhension du texte. Cela peut permettre à un programme de récupérer toutes les
 figures du texte et de les référencer dans une table des figures, par exemple.
 
-
                   ~ Le corps (fin) ~
+                  
+               -- Les attributs --
+                  
+class: Identifier une ou plusieurs balises. 
+*Les identifications peuvent être les mêmes, contrairement à l'attribut "id".
+
+id: Identifier une ou plusieurs balises.
+*Les identifications doivent être différentes, contrairement à l'attribut "class".
   
   
    
